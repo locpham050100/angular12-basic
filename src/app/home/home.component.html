@@ -1,13 +1,7 @@
 <div class="test">
-  <h3>Day la component Home</h3>
-  <h2>dui de</h2>
-  <br />
-  <input type="text" [(ngModel)]="age" />
-  <h1>Tuoi ban la {{ age }}</h1>
-  <!-- <h2 *ngIf="age <= 18">Con tre</h2>
-  <h2 *ngIf="age > 18">Da gia</h2> -->
-
-  <div *ngIf="age <= 18; then tre; else gia"></div>
-  <ng-template #tre>Con tre</ng-template>
-  <ng-template #gia>Da gia</ng-template>
+  <h3>day la component Home</h3>
+  <h1>Trai cay</h1>
+  <div *ngFor="let trai of traiCay; let i = index">
+    <li>{{ i + 1 }}. {{ trai }}</li>
+  </div>
 </div>
