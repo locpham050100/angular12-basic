@@ -2,7 +2,12 @@
   <h3>Day la component Home</h3>
   <h2>dui de</h2>
   <br />
-  <input type="text" [(ngModel)]="name" />
-  <h2>Chao bạn {{ name }}</h2>
-  <button (click)="resetName()">Resset</button>
+  <input type="text" [(ngModel)]="age" />
+  <h1>Tuoi ban la {{ age }}</h1>
+  <!-- <h2 *ngIf="age <= 18">Con tre</h2>
+  <h2 *ngIf="age > 18">Da gia</h2> -->
+
+  <div *ngIf="age <= 18; then tre; else gia"></div>
+  <ng-template #tre>Con tre</ng-template>
+  <ng-template #gia>Da gia</ng-template>
 </div>
