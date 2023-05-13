@@ -2,4 +2,21 @@
   border: 1px solid;
   padding: 10px;
   box-shadow: 5px 10px red;
+  width: 600px;
+}
+
+.table,
+th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  min-width: 100px;
+}
+
+.right {
+  text-align: right;
+}
+
+.so-am {
+  color: red;
 }
