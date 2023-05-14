@@ -2,7 +2,7 @@
   <h3>day la component Home</h3>
   <h1>Trai cay</h1>
 
-  <table class="table" id="table2">
+  <!-- <table class="table" id="table2">
     <tr>
       <th>STT</th>
       <th>Tên</th>
@@ -21,5 +21,18 @@
         <span>{{ trai.haGia | onSale | uppercase }}</span>
       </td>
     </tr>
-  </table>
+  </table> -->
+  tinh / thanh pho
+  <select name="" id="city" (change)="changeCity($event)">
+    <option *ngFor="let data of vietnamData" value="{{ data.city }}">
+      {{ data.city }}
+    </option>
+  </select>
+  <br />
+  quan / huyen
+  <select name="" id="district">
+    <option *ngFor="let district of districts" value="{{ district }}">
+      {{ district }}
+    </option>
+  </select>
 </div>
