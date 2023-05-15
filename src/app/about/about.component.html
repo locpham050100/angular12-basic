@@ -1,4 +1,6 @@
-<p>about works!</p>
+<p appHightLight>about works!</p>
+<p [appHightLight]="myColor">about works!</p>
+<p [appHightLight]="'orange'">about works!</p>
 
 <ul [ngSwitch]="loginName">
   <li *ngSwitchCase="'user'">
